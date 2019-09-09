@@ -24,6 +24,7 @@ const requestLogger = require('./lib/request_logger')
 
 // require middleware for accepting token or bearer
 const tokenOrBearer = require('./lib/token_or_bearer')
+let Cart = require('./app/models/Cart'); 
 
 // Define Ports
 const reactPort = 7165
