@@ -88,7 +88,7 @@ app.get('/products/:id', (req, res) => {
 });
 });
 
-// Products SEED ROUTE
+
 // Products SEED ROUTE
 app.get('/product/seed', (req, res) => {
   Product.insertMany([
