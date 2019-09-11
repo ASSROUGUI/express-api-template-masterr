@@ -192,14 +192,14 @@ router.patch('/cart/:id', requireToken, removeBlanks, (req, res, next) =>�
 router.delete('/cart/:id', requireToken, (req, res, next) => {
   Cart.findById(req.params.id)
     .then(handle404)
-    .then(cart => {console.log("delete it")
+    .then(cart => {console.log("delete ")
       requireOwnership(req, cart)
       cart.remove()
     })
     .then(() => res.sendStatus(204))
     .catch(next)
 })
-  ///
+
 // app.delete('/carts/products/:id', (req, res) => {
 //   Cart.findByIdAndRemove(req.params.id, (err, data) => {
 //   if (err) { console.log(err) }
