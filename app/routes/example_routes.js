@@ -199,7 +199,7 @@ router.delete('/cart/:id', requireToken, (req, res, next) => {
     .then(() => res.sendStatus(204))
     .catch(next)
 })
-
+  ///
 // app.delete('/carts/products/:id', (req, res) => {
 //   Cart.findByIdAndRemove(req.params.id, (err, data) => {
 //   if (err) { console.log(err) }
